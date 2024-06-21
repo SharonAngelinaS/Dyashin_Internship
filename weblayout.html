@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fixed Top Navbar</title>
+	<style>
+        body {
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: white;
+			color: #eee;
+			margin: 0;
+			padding: 0;
+		}
+
+		.header {
+			background-color: #333;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.header h1 {
+			margin: 0;
+		}
+
+		.content {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 20px;
+		}
+
+		.card {
+			background-color: #222;
+			border: 1px solid #555;
+			margin: 10px;
+			padding: 20px;
+			width: 240px;
+			text-align: center;
+			flex: 0 0 calc(25% - 40px); /* Adjust width to create rows */
+		}
+
+		.card h3 {
+			margin-top: 0;
+		}
+
+		.right {
+			width: 200px;
+			background-color: #222;
+			border: 1px solid #555;
+			padding: 20px;
+			text-align: center;
+			position: fixed;
+			right: 0;
+			top: 60px; /* Just below the navbar */
+			bottom: 0;
+			overflow-y: auto; /* To handle overflow content */
+		}
+		
+		.navbar {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			background-color: #333;
+			color: #fff;
+			padding: 20px 20px;
+			text-align: left;
+			text-size-adjust: 20px;
+			border: black;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			font-family: sans-serif;
+		}
+
+		.navbar a:hover {
+			color: #ccc;
+		}
+
+		.nav-links {
+			display: flex;
+			gap: 5px;
+		}
+
+		.content {
+			padding-top: 100px;
+			font-family: sans-serif;
+			font-weight: bold;
+			font-size: larger;
+			margin-right: 220px; /* Adjust to accommodate the right box */
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<a href="#"><b><i>My Website</i></b></a>
+		<div class="nav-links">
+			<a href="#">Link 1</a>
+			<a href="#">Link 2</a>
+			<a href="#">Link 3</a>
+		</div>
+	</div>
+	
+	<div class="content">
+		<div class="card">
+			<h3>Card One</h3>
+			<p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado.</p>
+		</div>
+		<div class="card">
+			<h3>Card Two</h3>
+			<p>Daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko.</p>
+		</div>
+		<div class="card">
+			<h3>Card Three</h3>
+			<p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
+		</div>
+		<div class="card">
+			<h3>Card Four</h3>
+			<p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
+		</div>
+		<div class="card">
+			<h3>Card Five</h3>
+			<p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+		</div>
+		<div class="right">
+			<h3>Have you discovered all of the other excellent content on this website?</h3>
+		</div>
+	</div>
+</body>
+</html>
